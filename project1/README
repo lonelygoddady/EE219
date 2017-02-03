@@ -1,0 +1,15 @@
+In this project we use python Scikit.Sklearn library to do regression analysis on network backup file datasheets and Boston real estate priceing data sheets.
+
+On these two datasets, we performed following regression analysis:
+1.  Linear regression
+2.  Polynomial Regression 
+3.  Random Forest model
+4.  Neural network model
+5.  Lasso and ridge regression 
+
+In order to compile our code, please enter the 'Code' folder and run main.py file.
+Regression function definition is written in the help.py file which main.py file will import from. 
+
+To view the regression Analysis result, please enter the Graph directory.
+
+Four screenshots shows the linear regression analysis summary for the datasheets
