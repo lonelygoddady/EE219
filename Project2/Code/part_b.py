@@ -59,10 +59,13 @@ def TFIDF(categories, train_or_test, stop_words, NLTK_StopWords):
 
 if __name__ == "__main__":
     # perform tfidf
-    categories = ['alt.atheism','comp.graphics','comp.os.ms-windows.misc','comp.sys.ibm.pc.hardware',   'comp.sys.mac.hardware','comp.windows.x',
-    'misc.forsale','rec.autos','rec.motorcycles','rec.sport.baseball','rec.sport.hockey','sci.crypt','sci.electronics','sci.med','sci.space',
-    'soc.religion.christian','talk.politics.guns','talk.politics.mideast','talk.politics.misc','talk.religion.misc']
+    # categories = ['alt.atheism','comp.graphics','comp.os.ms-windows.misc','comp.sys.ibm.pc.hardware',   'comp.sys.mac.hardware','comp.windows.x',
+    # 'misc.forsale','rec.autos','rec.motorcycles','rec.sport.baseball','rec.sport.hockey','sci.crypt','sci.electronics','sci.med','sci.space',
+    # 'soc.religion.christian','talk.politics.guns','talk.politics.mideast','talk.politics.misc','talk.religion.misc']
 
+    categories = [ 'comp.graphics', 'comp.os.ms-windows.misc', 'comp.sys.ibm.pc.hardware', 'comp.sys.mac.hardware', 
+    'rec.autos', 'rec.motorcycles', 'rec.sport.baseball', 'rec.sport.hockey']
+    
     stop_words, NLTK_StopWords = StopWords_extract()
     twenty_train, X_train_tfidf, X_train_counts, count_vect = TFIDF(categories,'train',stop_words,NLTK_StopWords)
 

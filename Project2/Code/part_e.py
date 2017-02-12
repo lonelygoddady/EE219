@@ -1,18 +1,12 @@
 from sklearn import svm
+from sklearn import metrics
 from sklearn.datasets import fetch_20newsgroups
 from sklearn.decomposition import TruncatedSVD
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.preprocessing import Normalizer
-from sklearn.metrics import roc_curve
-from sklearn import metrics
 
 from matplotlib import pyplot as plt
 from IPython.display import Image
-
-import plotly.plotly as py
-import plotly.graph_objs as go
-py.sign_in('ivychen', 'Gol0AP8lJ2GVI7FTaeI7')
-import os
 import numpy as np
 
 #import TFIDF, LSI function from part b and d
@@ -82,10 +76,9 @@ if __name__ == "__main__":
 	print 'The confusion matrix is as shown below:'
 	print metrics.confusion_matrix(twenty_test.target, Y_predict)
 
-	print twenty_test.target
 	#Plotting the ROC
 	probas_ = LSI_model.predict_proba(X_test_LSI)                                    
-	fpr, tpr, thresholds = roc_curve(twenty_test.target, probas_[:, 1])
+	fpr, tpr, thresholds = metrics.roc_curve(twenty_test.target, probas_[:, 1])
 	plt.plot(fpr, tpr, lw=1, label = "SVM ROC")                                    
 	plt.xlim([-0.05, 1.05])
 	plt.ylim([-0.05, 1.05])
