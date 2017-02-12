@@ -34,20 +34,20 @@ def preprocess(sentence, stop_words, NLTK_StopWords):
 
 def TFIDF(categories, train_or_test, stop_words, NLTK_StopWords):
     #Fetching the data set
-    twenty_train = fetch_20newsgroups(subset=train_or_test,categories=categories, shuffle=True, remove=('headers','footers','quotes'))
+    twenty_data = fetch_20newsgroups(subset=train_or_test,categories=categories, remove=('headers','footers','quotes'))
 
     #Stores the size of the dataset
-    size, = twenty_train.filenames.shape
+    size, = twenty_data.filenames.shape
 
     #Performing preprocessing on every document
     for item in range(0,size):
-        print twenty_train.filenames[item]
-        sentence = twenty_train.data[item]
-        twenty_train.data[item] = preprocess(sentence, stop_words, NLTK_StopWords)
+        print twenty_data.filenames[item]
+        sentence = twenty_data.data[item]
+        twenty_data.data[item] = preprocess(sentence, stop_words, NLTK_StopWords)
 
     #Transferring the modified dataset into a Term Document Matrix    
     count_vect = CountVectorizer()
-    X_train_counts = count_vect.fit_transform(twenty_train.data)
+    X_train_counts = count_vect.fit_transform(twenty_data.data)
 
     #Calculating the TF-IDF values for every term in the document
     tf_transformer = TfidfTransformer(use_idf=True).fit(X_train_counts)
@@ -55,7 +55,7 @@ def TFIDF(categories, train_or_test, stop_words, NLTK_StopWords):
     docs,terms = X_train_tfidf.shape
     print "The final number of terms are", terms
     print "The final number of docs are", docs
-    return twenty_train, X_train_tfidf, X_train_counts, count_vect
+    return twenty_data, X_train_tfidf, X_train_counts, count_vect
 
 if __name__ == "__main__":
     # perform tfidf
