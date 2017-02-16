@@ -1,4 +1,3 @@
 github links:
 https://github.com/salilkanetkar/Big-Data-Modeling---EE239AS
-
 https://github.com/mansee8/EE239AS-Big-Data-Analysis
