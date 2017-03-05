@@ -18,11 +18,11 @@ def part_b(data, X_tfidf):
 	print('% 9s' % 'init'
 	      '        homo    compl     ARI    AMI')
 	help_functions.bench_k_means(KMeans(init='k-means++', n_clusters=n_digits, 
-		n_init=10, max_iter = 200, random_state = 42),
+		n_init=10, max_iter = 200, random_state = 42, tol=1e-5),
               name="k-means++", data=X_tfidf, labels = labels)
 
 	help_functions.bench_k_means(KMeans(init='random', n_clusters=n_digits, 
-		n_init=10, max_iter = 200, random_state = 42),
+		n_init=10, max_iter = 200, random_state = 42, tol=1e-5),
 	              name="random", data=X_tfidf, labels = labels)
 
 	print(79 * '_')

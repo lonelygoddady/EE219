@@ -1,11 +1,12 @@
+import numpy as np
 from sklearn.datasets import fetch_20newsgroups
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
+from sklearn.utils.extmath import randomized_svd
 from sklearn.feature_extraction import text
 from sklearn import metrics
 from nltk import SnowballStemmer
 from nltk.tokenize import RegexpTokenizer
-import os
 
 def data_labeling(Y_data):
     labels = []
@@ -60,8 +61,11 @@ def TFIDF(categories, train_or_test, stop_words, NLTK_StopWords):
     tf_transformer = TfidfTransformer(use_idf=True).fit(X_train_counts)
     X_train_tfidf = tf_transformer.transform(X_train_counts)
     docs,terms = X_train_tfidf.shape
+    print(79 * '_')
+    print("TFIDF matrix constructed")
     print ("The final number of terms are", terms)
     print ("The final number of docs are", docs)
+    print(79 * '_')
     return twenty_data, X_train_tfidf, X_train_counts, count_vect
 
 def bench_k_means(estimator, name, data, labels):
@@ -81,3 +85,28 @@ def data_load():
     stop_words, NLTK_StopWords = StopWords_extract()
     twenty_train, X_tfidf, X_counts, count_vect = TFIDF(categories, 'all', stop_words, NLTK_StopWords)
     return twenty_train, X_tfidf, X_counts, count_vect
+
+def calculate_sigma(X_tfidf, k_values):
+    print(79 * '_')
+    print("Calculate Sigma Matrix")
+    U, Sigma, VT = randomized_svd(X_tfidf, n_components=k_values,
+                                  n_iter=200,
+                                  random_state=42)
+    print(Sigma)
+    print(79 * '_')
+    return Sigma
+
+def logrithm(tfidf, log_base):
+    # tfidf[tfidf > 0] = np.log(tfidf[tfidf > 0])/np.log(log_base)
+    # tfidf[tfidf is 0] = np.log(tfidf[tfidf is 0]+1e-5) / np.log(log_base)
+    # tfidf[tfidf < 0] = -(np.log(-(tfidf[tfidf < 0])) / np.log(log_base))
+    print log_base
+    for (x, y), value in np.ndenumerate(tfidf):
+        if value > 0:
+            tfidf[x,y] = np.log(value)/np.log(log_base)
+        elif value < 0:
+            tfidf[x,y] = np.log(abs(value))/np.log(log_base)
+        else:
+            # tfidf[x,y] = -np.log(1e-5)/np.log(log_base)
+            tfidf[x,y] = value
+    return tfidf
