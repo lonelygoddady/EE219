@@ -1,0 +1,7 @@
+('Averge number of tweets: ', 279)
+('Averge number of followers: ', 4394.253967831628)
+('Averge number of retweets: ', 1.5385568681955062)
+('Averge number of tweets: ', 1400)
+('Averge number of followers: ', 3675.3394800562573)
+('Averge number of retweets: ', 2.3882741706122483)
+('Runtime: ', 234.420603)

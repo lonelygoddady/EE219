@@ -1,0 +1,282 @@
+Problem 4 results for 'gohawks', 'gopatriots', 'nfl’, 'patriots', 
+'sb49'and ’Superbowl' results not yet generated
+
+Features used:
+1. number of tweets
+2. number of retweets
+3. number of followers
+4. max numbber of followers
+5. time of the data (24 hours represent the day)
+6. ranking score
+7. impression count
+8. Friends count
+9.  number of user
+10.  number of verified user
+11.  user mention
+12.  URL mention
+13.  number of long tweets
+14.  number of list 
+15.  Max list
+/System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7 "/Users/George/Google Drive/UCLA master/EE219/Project5/pro_4.py"
+Prediction error for this fold is: 42.506
+Prediction error for this fold is: 175.9436
+Prediction error for this fold is: 47.2168
+Prediction error for this fold is: 152.4984
+Prediction error for this fold is: 69.6116
+Prediction error for this fold is: 62.596
+Prediction error for this fold is: 157.6164
+Prediction error for this fold is: 368.049387755
+Prediction error for this fold is: 58.6604081633
+Prediction error for this fold is: 80.5963265306
+Prediction error for this fold is: 1206.47
+Prediction error for this fold is: 2616.03
+Prediction error for this fold is: 1337.24
+Prediction error for this fold is: 4372.64
+Prediction error for this fold is: 2983.72
+Prediction error for this fold is: 1104.72
+Prediction error for this fold is: 34.5
+Prediction error for this fold is: 6543.16
+Prediction error for this fold is: 986.36
+Prediction error for this fold is: 2109.0
+Prediction error for this fold is: 43.68
+Prediction error for this fold is: 6.46333333333
+Prediction error for this fold is: 41.8381818182
+Prediction error for this fold is: 14.3109090909
+Prediction error for this fold is: 19.8818181818
+Prediction error for this fold is: 16.4
+Prediction error for this fold is: 2.44727272727
+Prediction error for this fold is: 37.3254545455
+Prediction error for this fold is: 11.5872727273
+Prediction error for this fold is: 5.07818181818
+Average prediction errors for period 1 2 and 3 of hashtag gohawks
+(121.52949224489798, 2329.384, 19.90124242424243)
+Prediction error for this fold is: 49.8492063492
+Prediction error for this fold is: 134.104761905
+Prediction error for this fold is: 39.9698412698
+Prediction error for this fold is: 400.407419355
+Prediction error for this fold is: 144.282258065
+Prediction error for this fold is: 176.769032258
+Prediction error for this fold is: 64.7674193548
+Prediction error for this fold is: 319.451612903
+Prediction error for this fold is: 42.1222580645
+Prediction error for this fold is: 85.3361290323
+Average prediction error for the whole period is: 145.705993856
+Prediction error for this fold is: 5.59542857143
+Prediction error for this fold is: 17.64
+Prediction error for this fold is: 6.388
+Prediction error for this fold is: 9.83314285714
+Prediction error for this fold is: 21.0525714286
+Prediction error for this fold is: 19.3158823529
+Prediction error for this fold is: 13.3852941176
+Prediction error for this fold is: 26.7023529412
+Prediction error for this fold is: 2.78470588235
+Prediction error for this fold is: 6.07941176471
+Prediction error for this fold is: 949.05
+Prediction error for this fold is: 1328.84
+Prediction error for this fold is: 124.84
+Prediction error for this fold is: 1091.02
+Prediction error for this fold is: 2791.86
+Prediction error for this fold is: 2321.64
+Prediction error for this fold is: 202.78
+Prediction error for this fold is: 1530.1
+Prediction error for this fold is: 379.4
+Prediction error for this fold is: 427.54
+Prediction error for this fold is: 11.525
+Prediction error for this fold is: 0.84
+Prediction error for this fold is: 4.53333333333
+Prediction error for this fold is: 1.33333333333
+Prediction error for this fold is: 9.46
+Prediction error for this fold is: 1.02666666667
+Prediction error for this fold is: 5.13333333333
+Prediction error for this fold is: 0.326666666667
+Prediction error for this fold is: 9.88
+Prediction error for this fold is: 0.653333333333
+Average prediction errors for period 1 2 and 3 of hashtag gopatriots
+(12.877678991596639, 1114.7070000000001, 4.471166666666667)
+Prediction error for this fold is: 5.3105
+Prediction error for this fold is: 78.1743589744
+Prediction error for this fold is: 9.14769230769
+Prediction error for this fold is: 151.445641026
+Prediction error for this fold is: 115.327692308
+Prediction error for this fold is: 47.5928205128
+Prediction error for this fold is: 13.4769230769
+Prediction error for this fold is: 24.2553846154
+Prediction error for this fold is: 4.42051282051
+Prediction error for this fold is: 6.92615384615
+Average prediction error for the whole period is: 45.6077679487
+Prediction error for this fold is: 120.752888889
+Prediction error for this fold is: 128.820888889
+Prediction error for this fold is: 94.5995555556
+Prediction error for this fold is: 144.264090909
+Prediction error for this fold is: 103.206363636
+Prediction error for this fold is: 99.2418181818
+Prediction error for this fold is: 95.0313636364
+Prediction error for this fold is: 180.632727273
+Prediction error for this fold is: 63.735
+Prediction error for this fold is: 90.0295454545
+Prediction error for this fold is: 875.37
+Prediction error for this fold is: 2279.6
+Prediction error for this fold is: 4346.68
+Prediction error for this fold is: 4.24
+Prediction error for this fold is: 7705.66
+Prediction error for this fold is: 2455.24
+Prediction error for this fold is: 34.56
+Prediction error for this fold is: 6925.22
+Prediction error for this fold is: 777.6
+Prediction error for this fold is: 284.8
+Prediction error for this fold is: 131.993846154
+Prediction error for this fold is: 147.032307692
+Prediction error for this fold is: 158.187692308
+Prediction error for this fold is: 97.0615384615
+Prediction error for this fold is: 79.6492307692
+Prediction error for this fold is: 163.628333333
+Prediction error for this fold is: 86.97
+Prediction error for this fold is: 77.975
+Prediction error for this fold is: 91.785
+Prediction error for this fold is: 77.7133333333
+Average prediction errors for period 1 2 and 3 of hashtag nfl
+(112.03142424242427, 2568.8969999999999, 111.19962820512822)
+Prediction error for this fold is: 110.542711864
+Prediction error for this fold is: 261.286101695
+Prediction error for this fold is: 104.046551724
+Prediction error for this fold is: 292.65
+Prediction error for this fold is: 180.782413793
+Prediction error for this fold is: 282.909655172
+Prediction error for this fold is: 109.620344828
+Prediction error for this fold is: 216.89137931
+Prediction error for this fold is: 74.5848275862
+Prediction error for this fold is: 88.3365517241
+Average prediction error for the whole period is: 172.16505377
+Prediction error for this fold is: 111.740816327
+Prediction error for this fold is: 150.16
+Prediction error for this fold is: 146.608163265
+Prediction error for this fold is: 324.356734694
+Prediction error for this fold is: 113.270204082
+Prediction error for this fold is: 286.095416667
+Prediction error for this fold is: 238.120833333
+Prediction error for this fold is: 177.97
+Prediction error for this fold is: 71.0225
+Prediction error for this fold is: 156.625416667
+Prediction error for this fold is: 8223.78
+Prediction error for this fold is: 16220.02
+Prediction error for this fold is: 5475.24
+Prediction error for this fold is: 19670.0
+Prediction error for this fold is: 17721.0
+Prediction error for this fold is: 7393.66
+Prediction error for this fold is: 5099.9
+Prediction error for this fold is: 12924.84
+Prediction error for this fold is: 38599.08
+Prediction error for this fold is: 23216.78
+Prediction error for this fold is: 92.4
+Prediction error for this fold is: 41.8828571429
+Prediction error for this fold is: 94.7642857143
+Prediction error for this fold is: 60.02
+Prediction error for this fold is: 39.7
+Prediction error for this fold is: 67.0446153846
+Prediction error for this fold is: 20.6030769231
+Prediction error for this fold is: 104.375384615
+Prediction error for this fold is: 31.2476923077
+Prediction error for this fold is: 18.6769230769
+Average prediction errors for period 1 2 and 3 of hashtag patriots
+(177.59700850340136, 15454.430000000002, 57.071483516483525)
+Prediction error for this fold is: 69.335
+Prediction error for this fold is: 266.075625
+Prediction error for this fold is: 207.839365079
+Prediction error for this fold is: 1489.34126984
+Prediction error for this fold is: 199.464761905
+Prediction error for this fold is: 1057.53111111
+Prediction error for this fold is: 365.772380952
+Prediction error for this fold is: 145.517777778
+Prediction error for this fold is: 51.7536507937
+Prediction error for this fold is: 309.428253968
+Average prediction error for the whole period is: 416.205919643
+Prediction error for this fold is: 61.9326315789
+Prediction error for this fold is: 70.3231578947
+Prediction error for this fold is: 32.69
+Prediction error for this fold is: 94.867027027
+Prediction error for this fold is: 31.3891891892
+Prediction error for this fold is: 42.3864864865
+Prediction error for this fold is: 39.0881081081
+Prediction error for this fold is: 49.1724324324
+Prediction error for this fold is: 29.0908108108
+Prediction error for this fold is: 33.9459459459
+Prediction error for this fold is: 18102.4
+Prediction error for this fold is: 38122.64
+Prediction error for this fold is: 2077.52
+Prediction error for this fold is: 1362.54
+Prediction error for this fold is: 17018.0
+Prediction error for this fold is: 11299.3
+Prediction error for this fold is: 24793.06
+Prediction error for this fold is: 18431.76
+Prediction error for this fold is: 90091.72
+Prediction error for this fold is: 37019.2
+Prediction error for this fold is: 217.325714286
+Prediction error for this fold is: 87.1057142857
+Prediction error for this fold is: 55.75
+Prediction error for this fold is: 135.730769231
+Prediction error for this fold is: 111.807692308
+Prediction error for this fold is: 102.501538462
+Prediction error for this fold is: 44.3092307692
+Prediction error for this fold is: 152.484615385
+Prediction error for this fold is: 96.9369230769
+Prediction error for this fold is: 55.26
+Average prediction errors for period 1 2 and 3 of hashtag sb49
+(48.488578947368424, 25831.813999999995, 105.92121978021979)
+Prediction error for this fold is: 70.7646153846
+Prediction error for this fold is: 470.402692308
+Prediction error for this fold is: 63.0292307692
+Prediction error for this fold is: 709.764230769
+Prediction error for this fold is: 2346.44807692
+Prediction error for this fold is: 2558.33807692
+Prediction error for this fold is: 59.1769230769
+Prediction error for this fold is: 342.787692308
+Prediction error for this fold is: 33.8346153846
+Prediction error for this fold is: 254.816153846
+Average prediction error for the whole period is: 690.936230769
+Prediction error for this fold is: 172.612
+Prediction error for this fold is: 242.770222222
+Prediction error for this fold is: 213.377333333
+Prediction error for this fold is: 325.540888889
+Prediction error for this fold is: 308.845333333
+Prediction error for this fold is: 258.115555556
+Prediction error for this fold is: 224.694222222
+Prediction error for this fold is: 376.298181818
+Prediction error for this fold is: 81.9813636364
+Prediction error for this fold is: 248.496818182
+Prediction error for this fold is: 37383.56
+Prediction error for this fold is: 18165.22
+Prediction error for this fold is: 12745.92
+Prediction error for this fold is: 124691.2
+Prediction error for this fold is: 167303.0
+Prediction error for this fold is: 31464.24
+Prediction error for this fold is: 5879.22
+Prediction error for this fold is: 173910.38
+Prediction error for this fold is: 4633.84
+Prediction error for this fold is: 12728.08
+Prediction error for this fold is: 154.097142857
+Prediction error for this fold is: 160.834285714
+Prediction error for this fold is: 334.092857143
+Prediction error for this fold is: 175.232307692
+Prediction error for this fold is: 280.293846154
+Prediction error for this fold is: 190.112307692
+Prediction error for this fold is: 99.3353846154
+Prediction error for this fold is: 183.976923077
+Prediction error for this fold is: 160.556923077
+Prediction error for this fold is: 43.8661538462
+Average prediction errors for period 1 2 and 3 of hashtag superbowl
+(245.2731919191919, 58890.465999999993, 178.23981318681319)
+Prediction error for this fold is: 240.217
+Prediction error for this fold is: 552.419
+Prediction error for this fold is: 220.648333333
+Prediction error for this fold is: 4322.25766667
+Prediction error for this fold is: 1998.08677966
+Prediction error for this fold is: 3533.72576271
+Prediction error for this fold is: 326.996949153
+Prediction error for this fold is: 333.497627119
+Prediction error for this fold is: 103.228474576
+Prediction error for this fold is: 248.986779661
+Average prediction error for the whole period is: 1188.00643729
+
+Process finished with exit code 0
+
+

@@ -53,34 +53,34 @@ if __name__ == "__main__":
     print (X_train_tfidf.shape)
     print (X_test_tfidf.shape)
 
-    Y_data_labeling(twenty_test.target) # Category values for verification
-    Y_data_labeling(twenty_train.target) # Category values for trainning
+    # Y_data_labeling(twenty_test.target) # Category values for verification
+    # Y_data_labeling(twenty_train.target) # Category values for trainning
 
-    clf = LogisticRegression()
-    logistic_model = clf.fit(X_train_tfidf.toarray(), twenty_train.target) # train the data over high-dimension data and known Y values
+    # clf = LogisticRegression()
+    # logistic_model = clf.fit(X_train_tfidf.toarray(), twenty_train.target) # train the data over high-dimension data and known Y values
 
-    Y_predict = logistic_model.predict(X_test_tfidf) # predict the value with the learning algorithm
+    # Y_predict = logistic_model.predict(X_test_tfidf) # predict the value with the learning algorithm
 
-    # Calculating the accuracy, recall, precision and confusion matrix
-    accuracy_logistic = np.mean(twenty_test.target == Y_predict)
-    print ('The accuracy for the model is %f' % accuracy_logistic)
-    print ('\'0\' is Computer Technology and \'1\' is Recreational Activity')
-    print ("The precision and recall values are:")
-    print (metrics.classification_report(twenty_test.target, Y_predict))
-    print ('The confusion matrix is as shown below:')
-    print (metrics.confusion_matrix(twenty_test.target, Y_predict))
+    # # Calculating the accuracy, recall, precision and confusion matrix
+    # accuracy_logistic = np.mean(twenty_test.target == Y_predict)
+    # print ('The accuracy for the model is %f' % accuracy_logistic)
+    # print ('\'0\' is Computer Technology and \'1\' is Recreational Activity')
+    # print ("The precision and recall values are:")
+    # print (metrics.classification_report(twenty_test.target, Y_predict))
+    # print ('The confusion matrix is as shown below:')
+    # print (metrics.confusion_matrix(twenty_test.target, Y_predict))
 
-    # Plotting the ROC
-    if not os.path.exists('../Graphs/part_H'):
-        os.makedirs('../Graphs/part_H')
-    probas_ = logistic_model.predict_proba(X_test_tfidf)
-    fpr, tpr, thresholds = metrics.roc_curve(twenty_test.target, probas_[:, 1])
-    plt.figure(7)
-    plt.plot(fpr, tpr, lw=1, label = "Logistic Regression ROC")
-    plt.xlim([-0.05, 1.05])
-    plt.ylim([-0.05, 1.05])
-    plt.xlabel('False Positive Rate')
-    plt.ylabel('True Positive Rate')
-    plt.title('Receiver Operating Characteristic Example')
-    plt.legend(loc="lower right")
-    plt.savefig('../Graphs/part_H/ROC')
+    # # Plotting the ROC
+    # if not os.path.exists('../Graphs/part_H'):
+    #     os.makedirs('../Graphs/part_H')
+    # probas_ = logistic_model.predict_proba(X_test_tfidf)
+    # fpr, tpr, thresholds = metrics.roc_curve(twenty_test.target, probas_[:, 1])
+    # plt.figure(7)
+    # plt.plot(fpr, tpr, lw=1, label = "Logistic Regression ROC")
+    # plt.xlim([-0.05, 1.05])
+    # plt.ylim([-0.05, 1.05])
+    # plt.xlabel('False Positive Rate')
+    # plt.ylabel('True Positive Rate')
+    # plt.title('Receiver Operating Characteristic Example')
+    # plt.legend(loc="lower right")
+    # plt.savefig('../Graphs/part_H/ROC')

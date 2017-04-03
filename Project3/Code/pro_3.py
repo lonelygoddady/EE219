@@ -69,6 +69,7 @@ def pro_3():
 
     #     #part 3
         for i, t in enumerate(Threshold):
+
             tp_train = np.sum(y_train_real[y_train_pre >= t] >= t)
             fp_train = np.sum(y_train_real[y_train_pre >= t] < t)
             fn_train = np.sum(y_train_real[y_train_pre < t] >= t)
@@ -139,7 +140,7 @@ def pro_3():
     plt.ylabel('True_Positive_Rate')
     plt.title('ROC curve (train_data)')
     plt.show()
-    plt.savefig('../Graphs/pro_3/ROC_train.png')    
+    # plt.savefig('../Graphs/pro_3/ROC_train.png')    
 
     plt.figure(2)
     plt.plot(fp_test_f, tp_test_f)
@@ -149,7 +150,7 @@ def pro_3():
     plt.ylabel('True_Positive_Rate')
     plt.title('ROC curve (test_data)')
     plt.show()
-    plt.savefig('../Graphs/pro_3/ROC_test.png')
+    # plt.savefig('../Graphs/pro_3/ROC_test.png')
 
     plt.figure(3)
     plt.plot(recall, precision)
@@ -157,11 +158,11 @@ def pro_3():
     plt.ylabel('Precision')
     plt.title('Precision over recall')
     plt.show()
-    plt.savefig('../Graphs/pro_3/PR.png')
+    # plt.savefig('../Graphs/pro_3/PR.png')
 
 
 
 
 
-
+pro_3()
 
